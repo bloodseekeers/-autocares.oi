@@ -1,6 +1,6 @@
 <template>
     <div class="nav">
-       <v-navigation-drawer
+       <v-navigation-drawer class="d-flex d-sm-none"
          app
          v-model="drawer"
          clipped
