@@ -8,6 +8,12 @@
       <section id="servicios">
         <Servicios/>
       </section>
+      <section id="empresas">
+        <Empresa/>
+      </section>
+      <section id="contacto">
+        <Contacto/>
+      </section>
     </v-content>
     <Piepage/>
   </v-app>
@@ -18,11 +24,13 @@ import Nav from './components/Nav';
 import Piepage from './components/Piepage';
 import Cabecera from './components/Cabecera';
 import Servicios from './components/Servicios';
+import Empresa from './components/Empresa';
+import Contacto from './components/Contacto';
 export default {
   name: 'App',
 
   components: {
-  Nav, Piepage, Cabecera,Servicios,
+  Nav, Piepage, Cabecera,Servicios,Empresa,Contacto,
   },
 
   data: () => ({
@@ -30,3 +38,8 @@ export default {
   }),
 };
 </script>
+<style>
+  #app{
+    background-color:#fff ;
+  }
+</style>
