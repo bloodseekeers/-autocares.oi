@@ -53,7 +53,7 @@
                 <v-row class="mt-5" >
                     <v-col class="col-5 mr-1">
                     <p>
-                     <span> C/fray Bartolome de las casas, 63</span>
+                     <span> C/Fray Bartolome de las casas, 63</span>
                      <br><span>41520 El Viso del Alcor, Sevilla</span>
                      <br>Telf:  <a href="tel:+34692202752">692202752</a>
                      <br>Email: <a href="mailto:example@hotmail.com">example@hotmail.com</a>
@@ -67,8 +67,8 @@
             <v-col>
                   <v-img
                 class="mt-0 mb-5 ml-5 mr-4"
-                max-width=""
-                src="https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=353&q=80"
+                max-width="500px"
+                src="../assets/contacto.jpg"
             ></v-img>
             </v-col>
 
