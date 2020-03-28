@@ -5,7 +5,7 @@
   >
      <v-img
         :src="require('../assets/autocar1.jpeg')"
-        height="325"
+        max-width="100%"
         class="grey darken-4"
      ></v-img>
     </v-row>

@@ -1,6 +1,6 @@
 <template>
     <v-container id="servicios">
-        <v-card data-aos="flip-left" data-aos-duration="1500">
+        <v-card data-aos="flip-left" data-aos-duration="1200">
             <v-card-title>Servicios</v-card-title>
         <v-row>
             <v-col class="col-5 ml-2">

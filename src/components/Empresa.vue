@@ -1,6 +1,6 @@
 <template>
 <v-container id="empresa">
-    <v-card data-aos="flip-down" data-aos-duration="1500">
+    <v-card data-aos="flip-down" data-aos-duration="1100">
         <div class="text-center">
         <v-card-title>Empresa</v-card-title>
         </div>

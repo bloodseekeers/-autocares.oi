@@ -5,7 +5,7 @@
                 <v-card-title>Contacto</v-card-title>
             </div>            
         <v-row>
-            <v-col class="formul">
+            <v-col class="formul col-5">
                 <v-form>
                     <v-text-field class="ml-5"
                     v-model="name"
@@ -50,7 +50,7 @@
                     >Enviar</v-btn>
                     </div>
                 </v-form>
-                <v-row class="mt-5" >
+                     <v-row class="mt-5" >
                     <v-col class="col-5 mr-1">
                     <p>
                      <span> C/Fray Bartolome de las casas, 63</span>
@@ -60,18 +60,17 @@
                     </p>
                     </v-col>
                     <v-col class="col-4 ml-5">
-                        <div style="width: 100%"><iframe width="200%" height="200" src="https://maps.google.com/maps?width=100%&amp;height=300&amp;hl=en&amp;q=Calle%20Fray%20Bartolom%C3%A9%20de%20las%20Casas%2063+(Juan%20Parejo%20Autocares%20S.L)&amp;ie=UTF8&amp;t=&amp;z=18&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/coordinates.html">find my coordinates</a></iframe></div><br />
+                        <div><iframe width="200%" height="200" src="https://maps.google.com/maps?width=100%&amp;height=300&amp;hl=en&amp;q=Calle%20Fray%20Bartolom%C3%A9%20de%20las%20Casas%2063+(Juan%20Parejo%20Autocares%20S.L)&amp;ie=UTF8&amp;t=&amp;z=18&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/coordinates.html">find my coordinates</a></iframe></div><br />
                     </v-col>
                 </v-row>
             </v-col>
-            <v-col>
+            <v-col class="col-5">
                   <v-img
                 class="mt-0 mb-5 ml-5 mr-4"
-                max-width="500px"
+                max-width="800px"
                 src="../assets/contacto.jpg"
             ></v-img>
             </v-col>
-
         </v-row>
         </v-card>
     </v-container>
