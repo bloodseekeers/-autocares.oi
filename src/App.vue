@@ -8,7 +8,7 @@
       <section id="servicios">
         <Servicios/>
       </section>
-      <section id="empresas">
+      <section>
         <Empresa/>
       </section>
       <section id="contacto">
@@ -40,6 +40,6 @@ export default {
 </script>
 <style>
   #app{
-    background-color:#fff ;
+    background-color:rgb(245, 245, 245) ;
   }
 </style>

@@ -1,8 +1,9 @@
 <template>
-    <v-container id="servicios" >
-        <h2 class="text-center font-weight:bold;">Servicios</h2>    
+    <v-container id="servicios">
+        <v-card data-aos="flip-left" data-aos-duration="1500">
+            <v-card-title>Servicios</v-card-title>
         <v-row>
-            <v-col class="col-6 d-block pa-2">
+            <v-col class="col-5 ml-2">
                 <div>
                 <v-img
                  min-width=""
@@ -11,9 +12,9 @@
                  src="https://static.wixstatic.com/media/4d1bc6_213c483bb1b84e10a82c36f36ff90f9a~mv2.jpg/v1/fill/w_779,h_695,al_c,q_85,usm_0.66_1.00_0.01/pamobusautocaressevilla-7.webp"></v-img>
                 </div>
             </v-col>
-            <v-col class="col-6 d-block pa-2">
+            <v-col class="col-6 ml-3">
                 <h4>Nuestra empresa se adapta a todas las necesidades de los clientes.</h4>
-                <p>PamoBús S.L. abarca todos los ámbitos del transporte de personas, ofreciendo nuestros mejores servicios y siempre con una atención personalizada en:</p>
+                <p>Juan Parejo Autocares S.L. abarca todos los ámbitos del transporte de personas, ofreciendo nuestros mejores servicios y siempre con una atención personalizada en:</p>
                 <ul>
                     <li>
                         Congresos
@@ -41,13 +42,16 @@
                     </li>
                 </ul>
                 <h4>Seguridad</h4>
-                    <p>Nuestros autocares cumplen con toda la normativa actualizada en materia de seguridad tanto activa como pasiva.</p>
+                <p>Nuestros autocares cumplen con toda la normativa actualizada en materia de seguridad tanto activa como pasiva.</p>
                 <div class="text-center">
-                    <v-btn class="white--text mt-3" color="green lighten-1">Pide Presupuesto</v-btn>
+                    <v-btn class="white--text mt-3 mb-3" color="green lighten-1"
+                        target="blank"
+                        href="https://api.whatsapp.com/send?phone=34637328460"
+                    >Pide Presupuesto</v-btn>
                 </div>
             </v-col>
         </v-row>
-        
+        </v-card>
     </v-container>   
 
 </template>
@@ -57,9 +61,6 @@ export default {
 }
 </script>
 <style>
-#servicios{
-    font-size: 25x;
-}
 h2{
     font-size: 40px;
 }

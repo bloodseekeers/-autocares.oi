@@ -13,7 +13,7 @@
                   <v-icon>mdi-domain</v-icon>
                </v-list-item-action>
                <v-list-item-content>
-                  <v-list-item-title class="white--text">Sobre Nosotros</v-list-item-title>
+                  <v-list-item-title class="white--text"  >Sobre Nosotros</v-list-item-title>
                </v-list-item-content>
             </v-list-item>
             <v-list-item link>
@@ -34,9 +34,15 @@
         <v-app-bar-nav-icon class="d-flex d-sm-none" @click.stop="drawer = !drawer"/>
         <v-toolbar-title class="white--text">Juan Parejo Autocares S.L</v-toolbar-title>
         <v-spacer></v-spacer>
-        <v-btn text class="d-none d-sm-flex white--text">Servicios</v-btn>
-        <v-btn text class="d-none d-sm-flex white--text">Empresa</v-btn>
-        <v-btn text class="d-none d-sm-flex white--text">Contacto</v-btn>
+        <v-btn text class="d-none d-sm-flex white--text"
+         href="#servicios"
+        >Servicios</v-btn>
+        <v-btn text class="d-none d-sm-flex white--text"
+         href="#empresa"
+        >Empresa</v-btn>
+        <v-btn text class="d-none d-sm-flex white--text"
+         href="#contacto"
+        >Contacto</v-btn>
        </v-app-bar>
     </div>
 </template>
@@ -50,5 +56,8 @@ export default {
 }
 </script>
 <style>
-
+a{
+   text-decoration: none;
+   color: white;
+}
 </style>
