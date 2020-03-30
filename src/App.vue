@@ -41,5 +41,6 @@ export default {
 <style>
   #app{
     background-color:rgb(245, 245, 245) ;
+    overflow-x: hidden;
   }
 </style>

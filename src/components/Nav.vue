@@ -1,6 +1,9 @@
 <template>
-    <div class="nav">
+<nav>
        <v-app-bar
+       dense
+       flat
+       tile
          color = 'green lighten-1'
        >
        <!-- class="d-flex d-sm-none" -->
@@ -43,7 +46,7 @@
             </v-list-item>
          </v-list>
        </v-navigation-drawer>
-    </div>
+</nav>
 </template>
 <script>
 export default {

@@ -1,11 +1,9 @@
 <template>
     <v-container id="contacto" >
         <v-card data-aos="zoom-in-down" data-aos-duration="1500">
-            <div class="cardtitle">
-                <v-card-title>Contacto</v-card-title>
-            </div>            
+                <v-card-title class="headline">Contacto</v-card-title>            
         <v-row>
-            <v-col class="formul col-5">
+            <v-col class="formul col-sm-8 col-md-4 col-xl-6 mt-xl-4">
                 <v-form>
                     <v-text-field class="ml-5"
                     v-model="name"
@@ -46,31 +44,31 @@
                     <div class="text-center">
                     <v-btn
                     color="success"
-                    @click="submit"
-                    >Enviar</v-btn>
+                    @click="submit">Enviar</v-btn>
                     </div>
                 </v-form>
-                     <v-row class="mt-5" >
-                    <v-col class="col-5 mr-1">
-                    <p>
-                     <span> C/Fray Bartolome de las casas, 63</span>
-                     <br><span>41520 El Viso del Alcor, Sevilla</span>
-                     <br>Telf:  <a href="tel:+34692202752">692202752</a>
-                     <br>Email: <a href="mailto:example@hotmail.com">example@hotmail.com</a>
-                    </p>
-                    </v-col>
-                    <v-col class="col-4 ml-5">
-                        <div><iframe width="200%" height="200" src="https://maps.google.com/maps?width=100%&amp;height=300&amp;hl=en&amp;q=Calle%20Fray%20Bartolom%C3%A9%20de%20las%20Casas%2063+(Juan%20Parejo%20Autocares%20S.L)&amp;ie=UTF8&amp;t=&amp;z=18&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/coordinates.html">find my coordinates</a></iframe></div><br />
-                    </v-col>
-                </v-row>
             </v-col>
-            <v-col class="col-5">
+             <v-col class="col-md-5 ml-md-12 col-xl-4 mt-xl-4  col-lg-5 imga">
                   <v-img
                 class="mt-0 mb-5 ml-5 mr-4"
                 max-width="800px"
+                max-height="600px"
                 src="../assets/contacto.jpg"
             ></v-img>
             </v-col>
+            <v-row>
+                <v-col class="col-7 inf ml-9 col-xs-12 col-lg-6 col-xl-7">
+                    <h4 class="ml-6">Dirección</h4>
+                    <p class="ml-6">C/ Fray Bartolomé de las Casas, 63 El Viso del Alcor, Sevilla <br/> Telf: <a href="tel:+34692202752">692202752</a> <br/>Email: <a href="mailto:example@example.com">example@example-com</a></p>
+                </v-col>
+                <v-col class="col-4 ml-0 col-xs-0" > 
+                    <div class="map-responsive"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.77845918789!2d-5.721734584693258!3d37.39507117983041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1289e7e2208c67%3A0xafcb354736e3fde8!2sCalle%20Fray%20Bartolom%C3%A9%20de%20las%20Casas%2C%2063%2C%2041520%20El%20Viso%20del%20Alcor%2C%20Sevilla!5e0!3m2!1ses!2ses!4v1585528385299!5m2!1ses!2ses" width="490" height="160" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+                </v-col>
+            </v-row>
+            <v-row class="d-flex d-sm-none">
+                <div class="ml-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.77845918789!2d-5.721734584693258!3d37.39507117983041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1289e7e2208c67%3A0xafcb354736e3fde8!2sCalle%20Fray%20Bartolom%C3%A9%20de%20las%20Casas%2C%2063%2C%2041520%20El%20Viso%20del%20Alcor%2C%20Sevilla!5e0!3m2!1ses!2ses!4v1585528385299!5m2!1ses!2ses" width="250" height="160" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+            </v-row>
+
         </v-row>
         </v-card>
     </v-container>
@@ -78,7 +76,6 @@
 <script>
   import { validationMixin } from 'vuelidate'
   import { required, maxLength, email } from 'vuelidate/lib/validators'
-
 export default {
      mixins: [validationMixin],
     validations: {
@@ -129,6 +126,22 @@ export default {
 }
 </script>
 <style>
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.inf p a{
+    color: green;
+}
 .cardtitle{
     margin-right: auto;
     margin-left: 32em;
@@ -138,8 +151,19 @@ export default {
     margin-left: 8em;
     margin-right: 2em;
 }
-a{
-    text-decoration: none;
-    color: #000;
+
+@media only screen and (max-width: 958px){
+
+    .imga{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+ .formul{
+     margin-left: auto;
+ }
+.map-responsive{
+    display: none;
+}
 }
 </style>
