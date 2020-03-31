@@ -2,7 +2,7 @@
   <v-app>
    <Nav/>
     <v-content>
-      <section id="cabecera">
+      <section id="cabecera" class="d-none d-sm-flex">
         <Cabecera/>
       </section>
       <section id="servicios">
