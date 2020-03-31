@@ -43,4 +43,7 @@ export default {
     background-color:rgb(245, 245, 245) ;
     overflow-x: hidden;
   }
+  h2{
+    color: #1c8b25;
+  }
 </style>

@@ -1,9 +1,9 @@
 <template>
     <v-container id="contacto" >
-        <v-card data-aos="zoom-in-down" data-aos-duration="1500">
-                <v-card-title class="headline">Contacto</v-card-title>            
+        <v-card data-aos="zoom-in-down" data-aos-duration="1500">            
         <v-row>
             <v-col class="formul col-sm-8 col-md-4 col-xl-6 mt-xl-4">
+                <h2 class="ml-2 text-sm-center">Contacto</h2>
                 <v-form>
                     <v-text-field class="ml-5"
                     v-model="name"
@@ -43,7 +43,8 @@
                     ></v-textarea>
                     <div class="text-center">
                     <v-btn
-                    color="success"
+                    class="white--text"
+                    color="#1c8b25"
                     @click="submit">Enviar</v-btn>
                     </div>
                 </v-form>
